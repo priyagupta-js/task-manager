@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
 
+
 dotenv.config()
 connectDB();
 
@@ -36,4 +37,26 @@ app.listen( PORT, () =>{
 
 });
 
+const createAdmin = async () => {
+  try {
+    const adminExists = await User.findOne({ email: "admin@test.com" });
+
+    if (!adminExists) {
+      const hashedPassword = await bcrypt.hash("admin123", 10);
+
+      await User.create({
+        name: "Admin",
+        email: "admin@test.com",
+        password: hashedPassword,
+        role: "admin",
+      });
+
+      console.log("✅ Admin created");
+    } else {
+      console.log("ℹ️ Admin already exists");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 
