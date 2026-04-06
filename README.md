@@ -83,7 +83,7 @@ task-manager/
 
 ## Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
 ## Admin Panel
 
