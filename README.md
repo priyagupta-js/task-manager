@@ -2,8 +2,6 @@
 
 A full-stack **Task Management System** built using the MERN stack with **authentication, role-based access control, and task CRUD operations**.
 
-This project demonstrates real-world backend architecture, secure authentication using JWT, and a responsive frontend using React + Tailwind CSS.
-
 ---
 
 **GitHub Repository:** https://github.com/priyagupta-js/task-manager
@@ -93,7 +91,7 @@ task-manager/
 
 ---
 
-# Setup Instructions (Run Locally)
+# Setup Instructions
 
 ## Clone the Repository
 
@@ -132,12 +130,11 @@ cd frontend
 npm install
 npm run dev
 ```
+### Create `.env` file:
 
-Frontend runs on:
 ```
-http://localhost:5173
+VITE_API_URL=http://localhost:5000
 ```
----
 
 # API Endpoints
 
@@ -170,17 +167,6 @@ http://localhost:5173
 * Pagination & filtering logic
 
 ---
-
-# Future Improvements
-
-* Edit task UI
-* Search functionality
-* Toast notifications
-* Dark mode
-* Deployment with CI/CD
-
----
-
 # Author
 
 * GitHub: https://github.com/priyagupta-js
