@@ -56,7 +56,7 @@ exports.updateTask = async (req, res) => {
         user: req.user.id,
       },
       req.body,
-      { new: true }
+      {returnDocument: "after"}
     );
 
     if (!task) {
