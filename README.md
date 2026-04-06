@@ -75,19 +75,19 @@ task-manager/
 
 ## Login Page
 
-![Login](frontend\src\assets\login.png)
+![Login](screenshots\login.png)
 
 ## Register Page
 
-![Register](frontend\src\assets\register.png)
+![Register](screenshots\register.png)
 
 ## Dashboard
 
-![Dashboard](frontend\src\assets\dashboard.png)
+![Dashboard](screenshots\dashboard.png)
 
 ## Admin Panel
 
-![Admin](frontend\src\assets\Admin.png)
+![Admin](screenshots\Admin.png)
 
 ---
 
