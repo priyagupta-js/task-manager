@@ -89,7 +89,7 @@ task-manager/
 
 ## Admin Panel
 
-![Admin](frontend\src\assets\Admin_panel.png)
+![Admin](frontend\src\assets\Admin.png)
 
 ---
 
