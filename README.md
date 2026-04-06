@@ -6,9 +6,7 @@ This project demonstrates real-world backend architecture, secure authentication
 
 ---
 
-# Live Links
-**Frontend (Deployed):** https://your-frontend-link.com <br>
-**GitHub Repository:** https://github.com/your-username/task-manager
+**GitHub Repository:** https://github.com/priyagupta-js/task-manager
 
 ---
 
@@ -79,19 +77,19 @@ task-manager/
 
 ## Login Page
 
-![Login](./screenshots/login.png)
+![Login](frontend\src\assets\login.png)
 
 ## Register Page
 
-![Register](./screenshots/register.png)
+![Register](frontend\src\assets\register.png)
 
 ## Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](frontend\src\assets\dashboard.png)
 
 ## Admin Panel
 
-![Admin](./screenshots/admin.png)
+![Admin](frontend\src\assets\Admin_panel.png)
 
 ---
 
@@ -100,7 +98,7 @@ task-manager/
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/priyagupta-js/task-manager.git
 cd task-manager
 ```
 ---
@@ -185,6 +183,6 @@ http://localhost:5173
 
 # Author
 
-* GitHub: https://github.com/your-username
+* GitHub: https://github.com/priyagupta-js
 
 ---
