@@ -139,7 +139,7 @@ VITE_API_URL=http://localhost:5000
 ## Admin credentials
 
 ```
-email: priyagupta@gmail.com <br>
+email: priyagupta@gmail.com
 password: admin123
 
 ```
