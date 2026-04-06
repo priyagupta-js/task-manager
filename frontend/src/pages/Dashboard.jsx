@@ -102,10 +102,6 @@ function Dashboard() {
           <div className="flex items-center gap-3">
             {/* User badge */}
             <div className="hidden sm:flex items-center gap-2 bg-gray-100 rounded-full px-3 py-1.5">
-              <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xs uppercase">
-                {username.charAt(0)}
-              </div>
-              <span className="text-sm text-gray-700 font-medium">{username}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
                 role === "admin" ? "bg-purple-100 text-purple-700" : "bg-indigo-100 text-indigo-700"
               }`}>
@@ -114,7 +110,7 @@ function Dashboard() {
             </div>
 
             {/* Admin Panel button */}
-            {role === "admin" && (
+            {/* {role === "admin" && (
               <button
                 onClick={() => navigate("/admin")}
                 className="flex items-center gap-1.5 text-sm font-medium bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-lg transition-colors"
@@ -125,7 +121,7 @@ function Dashboard() {
                 </svg>
                 Admin Panel
               </button>
-            )}
+            )} */}
 
             {/* Logout */}
             <button
@@ -152,15 +148,15 @@ function Dashboard() {
             <p className="text-sm text-gray-500 mt-0.5">Manage and track your work</p>
           </div>
           <div className="flex gap-3">
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center min-w-[80px]">
+            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center min-w-20">
               <p className="text-xl font-bold text-indigo-600">{tasks.length}</p>
               <p className="text-xs text-gray-500 font-medium">Total</p>
             </div>
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center min-w-[80px]">
+            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center  min-w-20">
               <p className="text-xl font-bold text-green-600">{completedCount}</p>
               <p className="text-xs text-gray-500 font-medium">Done</p>
             </div>
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center min-w-[80px]">
+            <div className="bg-white rounded-xl border border-gray-200 shadow-sm px-4 py-2 text-center  min-w-20">
               <p className="text-xl font-bold text-amber-500">{pendingCount}</p>
               <p className="text-xs text-gray-500 font-medium">Pending</p>
             </div>
@@ -272,7 +268,7 @@ function Dashboard() {
                 {/* Checkbox / toggle */}
                 <button
                   onClick={() => toggleComplete(task)}
-                  className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+                  className={`mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
                     task.completed
                       ? "bg-green-500 border-green-500 text-white"
                       : "border-gray-300 hover:border-indigo-500"
@@ -295,7 +291,7 @@ function Dashboard() {
                       {task.title}
                     </h3>
                     {/* Status badge */}
-                    <span className={`flex-shrink-0 text-xs font-semibold px-2.5 py-0.5 rounded-full ${
+                    <span className={`shrink-0 text-xs font-semibold px-2.5 py-0.5 rounded-full ${
                       task.completed
                         ? "bg-green-100 text-green-700"
                         : "bg-amber-100 text-amber-700"
@@ -311,7 +307,7 @@ function Dashboard() {
                 {/* Delete */}
                 <button
                   onClick={() => handleDelete(task._id)}
-                  className="flex-shrink-0 p-1.5 text-gray-300 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
+                  className="shrink-0 p-1.5 text-gray-300 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                   title="Delete task"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
