@@ -79,15 +79,15 @@ task-manager/
 
 ## Register Page
 
-![Register](./screenshots\register.png)
+![Register](./screenshots/register.png)
 
 ## Dashboard
 
-![Dashboard](./screenshots\dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ## Admin Panel
 
-![Admin](./screenshots\Admin.png)
+![Admin](./screenshots/Admin.png)
 
 ---
 
