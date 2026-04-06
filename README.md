@@ -7,7 +7,7 @@ This project demonstrates real-world backend architecture, secure authentication
 ---
 
 # Live Links
-**Frontend (Deployed):** https://your-frontend-link.com
+**Frontend (Deployed):** https://your-frontend-link.com <br>
 **GitHub Repository:** https://github.com/your-username/task-manager
 
 ---
@@ -62,7 +62,7 @@ This project demonstrates real-world backend architecture, secure authentication
 * bcrypt.js (Password hashing)
 
 ---
-# 🗂️ Project Structure
+# Project Structure
 ```
 
 task-manager/
