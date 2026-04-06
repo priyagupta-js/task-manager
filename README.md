@@ -1,18 +1,190 @@
-# React + Vite
+# Task Manager Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **Task Management System** built using the MERN stack with **authentication, role-based access control, and task CRUD operations**.
 
-Currently, two official plugins are available:
+This project demonstrates real-world backend architecture, secure authentication using JWT, and a responsive frontend using React + Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Live Links
+**Frontend (Deployed):** https://your-frontend-link.com
+**GitHub Repository:** https://github.com/your-username/task-manager
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+# Features
 
-## Expanding the ESLint configuration
+## Authentication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* User Registration & Login
+* Password hashing using bcrypt
+* JWT-based authentication
+
+## Roles
+* **User**
+  * Create, update, delete own tasks
+
+* **Admin**
+  * View all users
+  * View all tasks
+
+## Task Management
+* Create tasks
+* View tasks
+* Update tasks (mark complete)
+* Delete tasks
+
+## Filters & Pagination
+* Filter by completed status
+* Pagination for task list
+
+## Security
+* Protected routes using JWT
+* Role-based authorization
+* Secure password storage
+
+---
+# Tech Stack
+
+## Frontend
+
+* React.js (Vite)
+* Tailwind CSS
+* Axios
+* React Router DOM
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT (Authentication)
+* bcrypt.js (Password hashing)
+
+---
+# 🗂️ Project Structure
+```
+
+task-manager/
+│
+├── frontend/        # React frontend
+│
+├── backend/        # Node backend
+│
+└── README.md
+```
+---
+
+# Screenshots of UI
+
+## Login Page
+
+![Login](./screenshots/login.png)
+
+## Register Page
+
+![Register](./screenshots/register.png)
+
+## Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+## Admin Panel
+
+![Admin](./screenshots/admin.png)
+
+---
+
+# Setup Instructions (Run Locally)
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/task-manager.git
+cd task-manager
+```
+---
+
+## Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+### Create `.env` file:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### Run backend:
+
+```bash
+npm run dev
+```
+---
+
+## Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+```
+http://localhost:5173
+```
+---
+
+# API Endpoints
+
+## Auth
+
+* POST `/auth/register`
+* POST `/auth/login`
+
+## Tasks
+
+* POST `/tasks`
+* GET `/tasks`
+* PUT `/tasks/:id`
+* DELETE `/tasks/:id`
+
+## Admin
+
+* GET `/admin/users`
+* GET `/admin/tasks`
+
+---
+
+# Key Concepts Implemented
+
+* JWT Authentication
+* Role-based access control
+* RESTful API design
+* MongoDB relationships using ObjectId
+* Middleware for authentication & authorization
+* Pagination & filtering logic
+
+---
+
+# Future Improvements
+
+* Edit task UI
+* Search functionality
+* Toast notifications
+* Dark mode
+* Deployment with CI/CD
+
+---
+
+# Author
+
+* GitHub: https://github.com/your-username
+
+---
